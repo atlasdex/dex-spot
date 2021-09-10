@@ -1,0 +1,64 @@
+@import '~antd/dist/antd.dark.less';
+@import './ant-custom.less';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.exchange-card {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+  width: 450px;
+  margin: 4px auto;
+  padding: 0px;
+
+  .ant-tabs-tab {
+    width: 50%;
+    margin: 0px;
+    justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .ant-tabs-tab-active {
+    background-color: gray;
+  }
+
+  .ant-tabs-nav-list {
+    width: 100% !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
